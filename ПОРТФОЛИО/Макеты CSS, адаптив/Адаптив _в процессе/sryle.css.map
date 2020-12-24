@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,CAAC,CAAC;EACE,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;CACb;;AAED,AAAA,OAAO,CAAC;EACJ,KAAK,EAAE,MAAM;EACb,MAAM,EAAE,KAAK;EACb,gBAAgB,EAAE,gBAAgB;CACrC",
+    "sources": [
+        "sryle.scss"
+    ],
+    "names": [],
+    "file": "sryle.css"
+}

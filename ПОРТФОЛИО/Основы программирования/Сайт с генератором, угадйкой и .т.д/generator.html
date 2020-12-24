@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Личный сайт  </title>
+	<link rel="stylesheet" href="style.css"> 
+	<script type="text/javascript">
+ var number=0;
+ var key =0;
+ var symbols = ["1","2","3","4","5","6","7","8","9","q","w","e","r","t","y","u","i","o","p","a","s","d","f","g","h","j","k","l","z","x","c","v","b","n","m","Q","W","E","R","T","Y","U","I","O","P","A","S","D","F","G","H","J","K","L","Z","X","C","V","B","N","M"];
+function hide(id){
+			document.getElementById(id).style.display = "none";}
+function write(text){
+			document.getElementById("info").innerHTML = text;}
+//function readInt(){
+	//	var number = document.getElementById("userAnswer").value;
+//			return parseInt(number);}
+
+function generate (){ 
+    number = document.getElementById("userAnswer").value;
+	for (var i=1; i<number; i++){
+	answer = parseInt(Math.random() * 56);
+	key=key+([symbols[answer]]);
+	//key.push ([symbols[answer]]);	 
+}
+
+write("Ваш пароль: " + key);
+				hide("button");
+				hide("userAnswer");
+key=0;
+}
+
+	
+
+</script>
+
+</head>
+
+<body>
+
+<div class="content">
+	<div class="header">
+		<a href="index.html">Главная</a>
+		<a href="puzzle.html">Загадки</a>
+		<a href="guess.html">Угадайка</a>
+		<a href="generator.html">Генератор паролей</a>
+	</div>
+
+
+</div>
+
+
+<div class="contentWrap">
+    <div class="content">
+        <div class="center">
+
+			<h1>Генератор паролей</h1>
+
+			<div class="box">
+
+				<p id="info">Для генерации случайного пароля, укажите количество символов</p>
+				<input type="text" id="userAnswer">
+				<br>
+				<a href="#" onClick="generate();" id="button">Начать</a>				
+			</div>
+
+        </div>
+    </div>
+</div>
+
+	
+
+</div>
+<div class="footer">
+	Copyright &copy; Ilya Levitskiy
+<div>
+
+
+</body>
+</html>

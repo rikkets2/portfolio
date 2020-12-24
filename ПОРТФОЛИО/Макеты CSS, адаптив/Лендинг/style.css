@@ -1,0 +1,235 @@
+body {
+    background-color: #f8f8f8;
+}
+
+.logo {
+    float: left;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+.menu {
+    float: right;
+    height: 30px;
+    font-size: 24px;
+    font-style: normal;
+    list-style: none;
+    color: darkslateblue;
+    margin-right: 5px;
+}
+
+.menu > li {
+    display: inline-block;
+    border: 2px solid orange;
+    height: 30px;
+    width: 90px;
+    padding-right: 10px;
+}
+
+.menu li a:hover {
+    color: red;
+}
+
+.container {
+    position: relative;
+    width: 1200px;
+    background-color: antiquewhite;
+    margin: 0 auto;
+    border: 1px solid orange;
+}
+
+.header {
+    background-image: url(img/1.2.jpg);
+    height: 89px;
+    background-color: antiquewhite;
+    padding-top: 1px;
+}
+
+.container h1 {
+    color: darkslateblue;
+    text-align: center;
+    font-size: 22px;
+}
+
+.headersofcatalog {
+    color: black;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: #eaeaea;
+}
+
+.shortdescription {
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
+
+.fulldescription {
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.specifications {
+    color: darkslateblue;
+    font-size: 16px;
+    text-align: left;
+}
+
+.catalog {
+    font-size: 27px;
+    font-style: normal;
+    list-style: none;
+    color: darkslateblue;
+    border: 4px solid orange;
+}
+
+.menu a {
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    height: 30px;
+    width: 100px;
+}
+
+.uniquelist {
+    margin-left: 50px;
+    color: blueviolet;
+    font-size: 26px;
+    list-style-image: url(img/13.jpg);
+}
+
+.map {
+    width: 1200px;
+}
+
+form {
+    color: darkslateblue;
+    font-size: 23px;
+    border: 4px solid orange
+}
+
+input {
+    text-transform: capitalize;
+    height: 50px;
+    font-size: 23px;
+    color: darkslateblue;
+}
+
+textarea {
+    text-transform: capitalize;
+}
+
+.email:focus {
+    color: skyblue;
+    background-color: lightcoral;
+}
+
+img {
+    background-color: orange;
+    padding: 2px 2px 2px 2px;
+}
+
+.words {
+    font-size: 20px;
+    color: darkslateblue;
+    text-align: center;
+    border: 2px solid orange;
+}
+
+hr {
+    border-color: orange;
+    border-width: 3px;
+    border-style: inset
+}
+
+.content {
+    width: 1300px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.nasos {
+    position: relative;
+    margin: 0 auto;
+    float: left;
+    width: 420px;
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.dvijok {
+    float: left;
+    width: 420px;
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.kotel {
+    width: 420px;
+    display: inline-block;
+}
+
+p {
+    font-size: 26px;
+    color: darkslateblue;
+}
+
+table {
+    width: 800px;
+    height: 200px;
+    border: 2px solid orange;
+    border-collapse: collapse;
+    font-size: 24px;
+    text-align: center;
+    color: darkslateblue;
+}
+
+table tr:first-child {
+    height: 90px
+}
+
+td {
+    border: 1px solid orange;
+}
+
+.picture img {
+    float: left;
+    width: 300px;
+}
+
+.picture img:hover {
+    border-collapse: collapse;
+    background-color: white;
+}
+
+.buy:hover {
+    background-color: orange;
+}
+
+.buy:active {
+    background-color: red;
+}
+
+p:first-letter {
+    font-size: 35px;
+    font-family: fantasy;
+}
+
+.container > img {
+    margin-left: 40px;
+    background-color: antiquewhite;
+    border: 1px solid orange;
+}
+
+.footer {
+    float: right;
+    background-color: antiquewhite;
+    height: 26px;
+    color: red;
+    margin-right: 5px;
+    margin-top: 2px;
+}

@@ -1,0 +1,169 @@
+@media only screen and (min-width:1000px) {
+    .header {
+        background-image: url(img/bg1.jpg) !important;
+    }
+
+    .logo {
+        width: 160px;
+        height: 46px !important;
+        background-size: contain !important;
+    }
+
+    .menu2 a {
+        font-size: 18px !important;
+    }
+
+    .trendboxl {
+        margin-top: 88px;
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+
+        .trendboxl_h2 {
+            margin-top: 88px !important;
+            width: 791px !important;
+            font-size: 48px !important;
+            line-height: 58px !important;
+            display: flex;
+            align-items: center;
+            color: #FFFFFF;
+            text-transform: uppercase;
+        }
+
+        .trendboxl_h3 {
+            font-size: 36px !important;
+            line-height: 43px !important;
+            margin-top: 22px !important;
+            display: flex;
+            align-items: center;
+            color: #FFFFFF;
+        }
+
+        .trendboxl_button {
+            margin-top: 35px !important;
+            font-size: 16px !important;
+            line-height: 19px !important;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            text-transform: uppercase;
+            width: 360px !important;
+            height: 48px !important;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            a {
+                align-items: center;
+                justify-content: center;
+                background: #008DCD;
+                color: #FFFFFF;
+                width: 360px;
+                height: 48px;
+                border-radius: 30px;
+                font-size: 16px;
+                line-height: 19px;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                text-transform: uppercase;
+                font-weight: bold;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .text {
+        display: none !important;
+    }
+
+    .about {
+        display: flex !important;
+        flex-direction: unset !important;
+        justify-content: center;
+
+        .brands {
+            width: 660px !important;
+            height: 320px !important;
+        }
+
+        .about_us {
+            width: 438px !important;
+            height: 280px !important;
+
+            .button2 {
+                width: 360px !important;
+                height: 48px !important;
+            }
+
+            .about_us_h2 {
+                display: flex !important;
+                font-size: 36px;
+                line-height: 43px;
+                display: flex;
+                align-items: center;
+                color: #000000;
+            }
+        }
+    }
+
+    .steps {
+        height: 1000px !important;
+
+    }
+
+    .step {
+        width: 462px !important;
+        height: 200px !important;
+    }
+
+    .step img {
+        width: 462px !important;
+        height: 312px !important;
+    }
+
+    .call1 h2 {
+        font-size: 36px !important;
+        line-height: 43px !important;
+    }
+
+    .call1 .button3 {
+        width: 360px !important;
+        height: 48px !important;
+
+    }
+
+    .call2 {
+        .calltext {
+            margin-top: 23px;
+
+            h2 {
+                font-size: 48px !important;
+                line-height: 58px !important;
+                display: flex;
+                align-items: center;
+                text-transform: uppercase;
+            }
+
+            h3 {
+                font-size: 24px !important;
+                line-height: 23px !important;
+                display: flex;
+                align-items: center;
+
+                color: #FFFFFF;
+
+
+            }
+        }
+    }
+
+    .feedback .feedcontent .feed1 {
+        max-width: 460px;
+    }
+
+    .doubtsunit {
+        width: 558px !important;
+    }
+}

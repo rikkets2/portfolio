@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Slider</title>
+
+    <style>
+        a {
+            display: block;
+            cursor: pointer;
+        }
+
+        .links {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 35px;
+        }
+
+        .links div {
+            display: flex;
+        }
+
+
+        .slider {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+            height: 400px;
+        }
+
+        .goods {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+
+        .goods div {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 25px;
+        }
+
+        .cart {
+            font-size: 14px;
+            border: 1px solid #000;
+            display: flex;
+            justify-content: space-around;
+        }
+    </style>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="links">
+        <a id="a1" href="#"> <img src="img/1.jpg" alt=""></a>
+        <a id="a2" href="#"><img src="img/2.jpg" alt=""> </a>
+        <a id="a3" href="#"><img src="img/3.jpg" alt=""></a>
+
+    </div>
+
+    <div class="slider">
+        <a><img src="img/left.png" alt=""></a>
+        <div class="slide"> <img src="img/3.jpg" alt=""></div>
+        <a><img src="img/right.png" alt=""></a>
+    </div>
+
+    <div class="goods">
+
+    </div>
+    <div class="cart">
+        <h3 class="globalname">
+            НАЗВАНИЕ ТОВАРА:
+        </h3>
+        <h3 class="quantity">
+            КОЛИЧЕСТВО:
+        </h3>
+
+        <h3 class="globalprice">
+            ОБЩАЯ СТОИМОСТЬ СОБАКЕНОВ:
+        </h3>
+        <button class="confirm">ПОДТВЕРДИТЬ ЗАКАЗ </button>
+        <button class="cancel">ОЧИСТИТЬ КОРЗИНУ</button>
+
+    </div>
+
+
+</body>
+
+</html>
