@@ -1,0 +1,21 @@
+<form *ngIf="form;else loading" [formGroup]="form" (ngSubmit)="submit()">
+  <h3 style="margin:15px auto;
+  width: 70%">Edit post</h3>
+  <div class="form-control"
+       [ngClass]="{invalid:form.get('title').touched && form.get('title').invalid}"
+  >
+    <label for="title">Post Title:</label>
+    <input style="margin-bottom: 10px" id="title" type="text" formControlName="title">
+    <div class="valid"
+         *ngIf="form.get('title').touched && form.get('title').invalid"
+    >
+      <p *ngIf="form.get('title').errors['required']">No text</p>
+    </div>
+    <label>Post Content:</label>
+    <quill-editor formControlName="text"></quill-editor>
+    <button type="submit" [disabled]="form.invalid||submitted" class="btn-dark"> Refresh</button>
+  </div>
+</form>
+<ng-template #loading>
+  <h1 class="loading">Loading...</h1>
+</ng-template>
