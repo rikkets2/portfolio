@@ -1,0 +1,35 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+var answer=parseInt(Math.random()*100);
+document.write (answer);
+var useranswer = +prompt("Ход первого игрока.Угадайте число от 1 до 100");
+var maxTryCount=10;
+for (var tryCount=1;tryCount<=maxTryCount;tryCount++)
+{if (useranswer == answer)
+	{alert("Поздравляю,вы угадали! Побеждает игрок № 1!!!")
+	break;}
+	else if (useranswer>=answer){alert("Вы ввели слишком большое число");
+      tryCount=tryCount-1;
+      var stop=prompt("Уважаемый 1-й игрок, хотите продолжить игру ? Если да- просто нажимайте ок! Если надоело-наберите нет");
+      if (stop == "нет"||stop == "НЕТ"||stop == "Нет" )break;}   
+    else if (useranswer<answer){alert ("Вы ввели слишком маленькое число");
+    tryCount=tryCount-1;
+    var stop=prompt("Уважаемый 1-й игрок, хотите продолжить игру? Если да- просто нажимайте ок! Если надоело-наберите нет");
+    if (stop == "нет"||stop == "НЕТ"||stop == "Нет") break;}
+    var user2answer = +prompt("Ход второго игрока.Угадайте число от 1 до 100");
+    if (user2answer == answer)
+	{alert("Поздравляю,вы угадали. Побеждает игрок № 2 !!!")
+	break;}
+	else if (user2answer>=answer){alert("Вы ввели слишком большое число");
+          var stop=prompt("Уважаемый 2-ой игрок, хотите продолжить игру? Если да- просто нажимайте ок. Если надоело-наберите нет");
+          if (stop == "нет"||stop == "НЕТ"||stop == "Нет" )break;}   
+    else if (user2answer<answer){alert ("Вы ввели слишком маленькое число");
+          var stop=prompt("Уважаемый 2-ой игрок, хотите продолжить игру? Если да- просто нажимайте ок! Если надоело-наберите нет!");
+          if (stop == "нет"||stop == "НЕТ"||stop == "Нет") break;}
+          useranswer=+prompt(" Ход 1 ого игрока. Введите число от 1 до 100\n ");
+}
+if ((useranswer != answer)&&(user2answer != answer)){
+alert ("Вы проиграли");
+alert ("Правильный ответ " + answer);}
+
+</script>

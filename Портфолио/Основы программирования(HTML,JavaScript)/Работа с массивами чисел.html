@@ -1,0 +1,58 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+	
+var N=+prompt("Введите длину и, соответственно, наполнение массива N");
+var mass=[];
+function massive (n) {
+	for (var i = 1; i <=n; i++) {
+		mass.push(i);	}
+alert("Массив принимает следующий вид\n" +mass);
+}
+massive (N);
+var mass2=[];
+var n=+prompt("Введите длину массива из случайно сгенерированных чисел от 1 до 100   ");
+for (var i = 1; i <= n; i++) {
+	var randomnumber=parseInt(Math.random()*100);
+	mass2.push(randomnumber);}
+alert("Массив сгенерирован следующего вида:\n "+mass2);
+function summa (mass) {
+     var summ=0;
+     for (var i = 0; i <= (mass.length-1); i++) {
+	 summ= summ+mass[i];}
+alert("Сумма чисел массива равна  "+summ);}
+
+summa (mass2);
+function min (mass) {
+     var min=mass[0];
+     for (var i = 1; i <= (mass.length-1); i++) {
+     	if (mass[i]<min) {
+     		min=mass [i];
+     	};};
+	 return min;
+	 }
+l=min(mass2);
+alert ("Самое маленькое число в массиве " +l);
+
+function max (mass) {
+     var max=mass[0];
+     for (var i = 1; i <= (mass.length-1); i++) {
+     	if (mass[i]>max) {
+     		max=mass [i];
+     	};};
+     return max;
+	}
+
+	 m=max (mass2);
+	 alert ("Самое большое число в массиве " +m);
+  
+function even (mass) {
+     var mass3=[];
+         for (var i = 0; i <= (mass.length-1); i++) {
+     	if (((mass[i])%2==0) && (mass[i] != 0)) {
+          mass3.push(mass[i]);
+     	};};
+     alert ("Четные числа в массиве\n"+mass3);
+     return mass3;}
+     even (mass2);
+       
+</script>

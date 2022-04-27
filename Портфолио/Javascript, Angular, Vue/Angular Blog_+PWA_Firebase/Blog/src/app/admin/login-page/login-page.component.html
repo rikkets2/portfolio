@@ -1,0 +1,35 @@
+<form class="form-login" [formGroup]="form" (ngSubmit)="submit()">
+  <h6> Login:blog@mail.ru,password:123456</h6>
+  <h3> Login as administrator</h3>
+  <div class="alert" *ngIf="message"> {{message}}</div>
+  <div class="alert" *ngIf="auth.error$|async as error"> {{error}}</div>
+  <div class="form-control"
+       [ngClass]="{invalid:form.get('email').touched && form.get('email').invalid}"
+  >
+    <label for="email">Email:</label>
+    <input id="email" type="email" formControlName="email">
+    <div class="valid"
+         *ngIf="form.get('email').touched && form.get('email').invalid"
+    >
+      <p *ngIf="form.get('email').errors['required']">No text</p>
+      <p *ngIf="form.get('email').errors['email']">Incorrect email</p>
+    </div>
+  </div>
+  <div class="form-control"
+       [ngClass]="{invalid:form.get('password').touched && form.get('password').invalid}"
+  >
+    <label for="email">Password:</label>
+    <input id="password" type="password" formControlName="password">
+    <div class="valid"
+         *ngIf="form.get('password').touched && form.get('password').invalid"
+    >
+      <p *ngIf="form.get('password').errors['required']">No text</p>
+      <p *ngIf="form.get('password').errors['minlength']">{{form.get('password').errors['minlength'].requiredLength}}
+        symbols password, now{{' ' + form.get('password').errors['minlength'].actualLength}}</p>
+    </div>
+  </div>
+  <button type="submit"
+          [disabled]="form.invalid||submitted"
+  >Submit
+  </button>
+</form>

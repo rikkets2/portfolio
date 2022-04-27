@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.d-block w-100 {
+  width: 800px;
+  height: 800px;
+}
+
+.container {
+  width: 1600px;
+  margin: 0 auto;
+}
+
+.carousel-inner h5,
+p {
+  color: red;
+}
+
+video {
+  margin-left: 247px;
+}
+/*# sourceMappingURL=style.css.map */

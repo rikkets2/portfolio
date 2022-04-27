@@ -1,0 +1,12 @@
+<div class="post">
+  <div class="post-header"><h2>
+    {{post.title}}</h2>
+  </div>
+  <h3> {{post.date|date:'medium'}}</h3>
+  <h4> {{post.author}}</h4>
+  <button class="btn-dark"
+          [routerLink]="['/post',post.id]"
+  >Open
+  </button>
+</div>
+

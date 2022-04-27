@@ -1,0 +1,16 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+
+
+var cash=parseInt(+prompt("Введите сумму, которую хотите разместить во вклад в рублях РФ"));	
+var value=+prompt("Введите процент по вкладу")/100;	
+var income;
+var profit;
+ document.write (" Начисление процентов по вкладу в течение следующих 5 (пяти) лет  с капитализацией процентов в конце календарного года<br>");
+ for (var i=1; i<=5 ;i++){ 
+  	  income=parseInt(cash*value);
+ 	  profit=parseInt(cash+income);
+ 	  document.write (" Год "+i+" Сумма вклада " +cash +" руб.  Проценты по вкладу за год  " +income+" руб Сумма депозита с капитализацией  "+profit+" руб <br>");
+      cash=parseInt(cash+income);
+ }
+</script>
