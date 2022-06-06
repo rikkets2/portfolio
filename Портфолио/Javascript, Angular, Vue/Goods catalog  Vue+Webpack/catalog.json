@@ -1,6 +1,0 @@
-[
-  { "title": "Ноутбук", "price": 30000, "image": "img/1.jpg","id_product": 123,"quantity":1},
-  { "title": "Клавиатура", "price": 1000, "image": "img/2.jpg","id_product": 789,"quantity":1},
-  { "title": "Мышь", "price": 500, "image": "img/3.jpg","id_product": 456,"quantity":1},
-  { "title": "Монитор", "price": 10000, "image": "img/4.jpg","id_product": 666,"quantity":1}
-]
